@@ -1,0 +1,312 @@
+/* =========================
+RESET BÁSICO
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* =========================
+BODY
+========================= */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#111;
+color:white;
+line-height:1.6;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+background-color:#1c1c1c;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+header p{
+color:#bbbbbb;
+}
+
+
+/* =========================
+NAVBAR
+========================= */
+
+nav{
+background-color:#151515;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+
+/* =========================
+CONTENIDO GENERAL
+========================= */
+
+.contenido{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.contenido h2{
+margin-bottom:15px;
+color:#00bfff;
+}
+
+.contenido p{
+margin-bottom:15px;
+}
+
+
+/* =========================
+CARDS DE PROYECTOS
+========================= */
+
+.card{
+background:#1e1e1e;
+padding:20px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:10px;
+}
+
+
+/* =========================
+BOTONES
+========================= */
+
+.boton{
+display:inline-block;
+background:#00bfff;
+color:black;
+padding:8px 15px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.boton:hover{
+background:#009acd;
+}
+
+
+/* =========================
+IMÁGENES DE PROYECTOS
+========================= */
+
+.imagen-proyecto{
+width:100%;
+max-width:700px;
+margin-top:20px;
+border-radius:8px;
+}
+
+
+/* =========================
+IMÁGENES ABOUT ME
+========================= */
+
+.imagen-about{
+width:300px;
+margin-top:15px;
+margin-bottom:20px;
+border-radius:10px;
+}
+.galeria-hiking{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.galeria-hiking img{
+width:300px;
+height:auto;
+border-radius:8px;
+}
+
+
+/* =========================
+REDES SOCIALES
+========================= */
+
+.redes{
+margin-top:15px;
+}
+
+.boton-red{
+display:inline-block;
+margin-right:10px;
+padding:8px 15px;
+background:#333;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.boton-red:hover{
+background:#00bfff;
+color:black;
+}
+
+
+/* =========================
+FORMULARIO
+========================= */
+
+form{
+margin-top:20px;
+max-width:400px;
+}
+
+input,
+textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#00bfff;
+color:black;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#009acd;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:#1c1c1c;
+text-align:center;
+padding:20px;
+margin-top:40px;
+color:#aaaaaa;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.contenido{
+padding:30px 15px;
+}
+
+.imagen-about{
+width:100%;
+}
+
+}
+
+/* =========================
+CV
+========================= */
+
+.cv-container{
+display:flex;
+gap:50px;
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+align-items:flex-start;
+}
+
+.cv-foto{
+text-align:center;
+min-width:220px;
+}
+
+.cv-foto img{
+width:250px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.cv-foto h2{
+margin-bottom:5px;
+}
+
+.cv-info{
+flex:1;
+}
+
+.cv-info h2{
+margin-top:20px;
+margin-bottom:10px;
+color:#00bfff;
+}
+
+.cv-info ul{
+margin-left:20px;
+margin-bottom:10px;
+}
+
+.cv-info li{
+margin-bottom:5px;
+}
+
+.galeria-proyecto{
+display:flex;
+gap:15px;
+margin:20px 0;
+}
+
+.galeria-proyecto img{
+width:33%;
+height:auto;
+border-radius:8px;
+object-fit:cover;
+}
+.galeria-proyecto img:hover{
+transform:scale(1.03);
+transition:0.3s;
+}
